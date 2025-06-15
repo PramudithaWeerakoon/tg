@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f5f7fa;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+button:focus,
+select:focus,
+a:focus {
+  outline: 2px solid #1e3c72;
+  outline-offset: 2px;
+}
+
+/* Loading and transition styles */
+* {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Print styles */
+@media print {
+  .header,
+  .navigation,
+  .back-btn {
+    display: none;
+  }
+}
